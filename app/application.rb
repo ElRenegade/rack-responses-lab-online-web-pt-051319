@@ -1,7 +1,7 @@
 class Application
   def call(env)
     resp = Rack::Response.new
-    t = Time.now
+    t = Time.now.hour
     resp.write "#{t}"
     # if Time.now.hour.between?(0,11)
     #   resp.write "Good Morning!"
